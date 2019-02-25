@@ -1,38 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title>Web_LookAndFeel</title>
-    <meta http-equiv="X-UA-Compatible" content=“IE=edge”>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="images/ir.png" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+<head>
+	<title>Web_LookAndFeel</title>
+	<meta http-equiv="X-UA-Compatible" content=“IE =edge”>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="images/ir.png" />
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<header>
+		<h2><a href="./index.html">Home</a></h2>
+		<nav>
+			<li><a href="./page1.html">Movies</a></li>
+			<li><a href="./page2.html">Events</a></li>
+			<li><a href="./page3.html" class="active">Sports</a></li>
+		</nav>
+	</header>
+	<div class="section1">
+		<!--<h1>About Project</h1>-->
+		<p>
+			<b>About Project:</b>
+			<small>
+				This project demonstrates the User Interface for booking Movies, events and sports. In the home page, header consists of links/options for the functionalities “Movies”, “Events”, “Sports”. There are three different pages, each one for movies, events and sports.  The page which ever we are in currently will be highlighted in the header.
+				Movies page displays a slide show of list of movies and shows” Book Now”, however currently the book now functionality is not implemented, by clicking on the slide of a particular movie we can watch the trailer of the movie using iframe tag which embeds You Tube video into the page. Movies also shows few movies in the “Now Showing” section by clicking on which we can watch the trailer of that particular movie and read about summary of that movie.
+				Similar is the functionality for “Events” and “Sports”, the respective pages for each one of them displays a slide show of the happening things in those categories.
+			</small>
+		</p>
+		<p>
+			<b>Responsiveness:</b>
+			<small>
+				Using meta tag and the elements it provides we can achieve responsiveness and compatibility for our websites.
+				Used http-equiv= “X-UA-Compatible”, it is a document mode meta tag that allows web developers to choose what version of Internet Explorer the page should be rendered as.
+				The element name=” viewport” gives the browser instructions on how to control the page's dimensions and scaling.
+				The width=device-width part sets the width of the page to follow the screen-width of the device we currently use.
+				The initial-scale=1 element sets the initial zoom level when the page is first loaded by the browser.
+			</small>
+		</p>
+		<p>
+			<b>Usability:</b>
+			<small>
+				We have designed the header to be in place for all the pages in the project and the user can navigate to any of the page from each page using the navigations present in the header.
+			</small>
+		</p>
+		<p>
+			<b>Design:</b>
+			<small>
+				If different sections of the pages have same CSS rules, for example in or project we have same set of rules for group of selectors which we have implemented by grouping multiple CSS selectors and also making use of scope for instance few rules were added for all elements using *.
+				Made styling reusable to different components by maximizing usage of classes and to be very specific we made use of id’s and qualified selectors, keeping in mind the reusability.
+				Other than selectors, at-rules are added for providing browser instructions.
+				Tried to maintain homogenous look through out pages, with the help of different CSS selector properties so that user does not feel different sections and pages are unrelated.
+			</small>
+		</p>
+	</div>
 
-  <body>
-    <header>
-      <h2><a href="./index.html">Home</a></h2>
-      <nav>
-        <li><a href="./page1.html">Movies</a></li>
-        <li><a href="./page2.html">Events</a></li>
-        <li><a href="./page3.html" class="active">Sports</a></li>
-      </nav>
-    </header>
-    <div class="section1">
-      <h1>About Project</h1>
-      <p>
-        And the madness & the craziness of the biggest franchise of laughter
-        continues... #TotalDhamaal is the wildest adventure comedy ever. After
-        Guddu & Jonny, small time conmen gets double-crossed of their illegal
-        booty by their own colleague Daddu starts a mad crazy adventure between
-        Guddu-Jonny & 3 other groups i.e Avinash & Bindu - an bickering couple
-        about to be divorced; Lallan & Jhingur - Fire officers turned offenders
-        & two weird siblings Aditya & Manav after they disagree to distribute
-        the booty equally.
-      </p>
-    </div>
-    
-    <br />
-    <footer><p>&copy; 2019</p></footer>
-  </body>
+	<br />
+	<footer><p>&copy; 2019</p></footer>
+</body>
 </html>
