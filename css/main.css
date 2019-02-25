@@ -84,7 +84,7 @@ ul.grid {
 HEADER
 ---------------*/
 header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(1, 1, 1, 0);
   position: fixed;
   top: 0;
   left: 0;
