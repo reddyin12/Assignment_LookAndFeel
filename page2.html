@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web_LookAndFeel</title>
+    <meta http-equiv="X-UA-Compatible" content=“IE=edge”>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/ir.png" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2><a href="./index.html">Home</a></h2>
+      <nav>
+        <li><a href="./page1.html">Movies</a></li>
+        <li><a href="./page2.html" class="active">Events</a></li>
+        <li><a href="./page3.html">Sports</a></li>
+      </nav>
+    </header>
+    <section id="section1" class="section1">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/img-5.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-6.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-7.jpg" style="width:100%" />
+        </div>
+        <div class="mySlides fade">
+                <img src="images/img-8.jpg" style="width:100%" />
+              </div>
+      </div>
+      <br />
+
+      <div style="text-align:center">
+        <span class="dot"></span> <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+    
+    <br />
+    <footer><p>&copy; 2019</p></footer>
+  </body>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+</html>

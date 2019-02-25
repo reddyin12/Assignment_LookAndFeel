@@ -1,1 +1,147 @@
-<!--Your HTML code here-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web_LookAndFeel</title>
+    <meta http-equiv="X-UA-Compatible" content=“IE=edge”>   <!-- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--compatibility according tothe screen size -->
+    <link rel="icon" type="image/png" href="images/ir.png" /> <!--tab icon --> <!--tag attributes -->
+    <meta charset="utf-8" /> <!--standard -->
+    <link rel="stylesheet" href="css/style.css" /> <!-- inline,style tag,adding a new file-->
+  </head>
+
+  <body>
+    <header>
+      <h2><a href="./index.html">Home</a></h2><!-- a -hyperlink -->
+      <nav> <!-- horizontal-->
+        <li><a href="./page1.html">Movies</a></li> <!--list -->
+        <li><a href="./page2.html">Events</a></li> 
+        <li><a href="./page3.html">Sports</a></li> 
+		<li><a  href="./page4.html">About project&#9432;</a></li> 
+      </nav>
+    </header>
+    <section id="section1" class="section1"> <!-- like header and footer-->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <a href="thomus.html" >
+          <img src="images/img-1.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-5.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <a href="totalDhamal.html" >
+          <img src="images/img-3.jpg" style="width:100%" />
+          </a>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-6.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <a href="uri.html" >
+          <img src="images/img-2.jpg" style="width:100%" />
+		  </a>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-9.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-10.jpg" style="width:100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/img-8.jpg" style="width:100%" />
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span>
+      </div>
+    </section>
+    <div id="section2" class="section2">
+      <h1>Trailers</h1>
+      <div class="trailer">
+        <iframe              
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/0LHxvxdRnYc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="trailer">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hA6hldpSTF8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div id="section2" class="section2">
+      <div class="trailer">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fo9EhcwQXcM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="trailer">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JFP24D15_XM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <br />
+    <footer>
+	<p><small>&copy; 2019</small> <a href="github.com"><small><font color="black"><strong>Git Url</strong></font></small></a></p>
+	</footer>
+  </body>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+  </script>
+</html>

@@ -8,7 +8,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background: url("http://www.zingerbug.com/Backgrounds/background_images/indigo_textured_rock_seamless_pattern.jpg");
+  background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
   font: normal 16px "Open Sans", sans-serif;
   color: #555;
   text-align: center;
@@ -30,8 +30,6 @@ a {
 a:hover {
   opacity: 1;
 }
-
-
 
 .round {
   border: 6px solid #2196f3;
